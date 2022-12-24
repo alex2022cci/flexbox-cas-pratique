@@ -1,0 +1,255 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.info-section {
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.section-flex {
+    margin-bottom: 400px;
+}
+
+/* Navigations */
+
+
+.flex-nav {
+    background: #f1f1f1;
+    height: 70px;
+}
+
+/* nav - 1 */
+
+.nav-1{
+    display: flex;
+    justify-content: space-between; /*espace entre les éléments */
+    align-items: center;
+}
+.nav-1 img {
+    width: 60px;
+    margin-left: 50px;
+}
+.nav-1 ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 50px;
+}
+.nav-1 ul li {
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+/* nav - 2 */
+
+.nav-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.nav-2 ul {
+    list-style-type: none;
+    display: flex;
+}
+.nav-2 ul li {
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+/* nav - 3 */
+
+.nav-3{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.nav-3 img {
+    width: 60px;
+    margin-left: 50px;
+    margin-right: 25px;
+}
+
+.nav-3 ul {
+    list-style-type: none;
+    display: flex;
+}
+.nav-3 ul li {
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+/* Galerie responsive */
+
+.galerie {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    width: 80%;
+    max-width: 1300px;
+    margin: 70px auto 0;
+    /* background: crimson; */
+}
+.item {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Centrer sur X & Y */
+
+.container-centre  {
+    width: 300px;
+    height: 300px;
+    background: rgb(49, 156, 206);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc-jaune {
+    width: 50px;
+    height: 50px;
+    background: yellow;
+}
+
+
+/* Bouton */
+
+.btn-flex {
+    min-width: 200px;
+    height: 60px;
+    display: flex;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    color: #222;
+}
+.icone-btn {
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: rgb(90, 90, 216);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.icone-btn img{
+    width: 25px;
+}
+.txt-btn {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    min-width: 150px;
+    padding: 12px;
+    font-size: 22px;
+}
+
+/* Exemples flex */
+
+.container-flex  {
+    width: 800px;
+    height: 500px;
+    margin: 150px auto;
+    background: #ffcb9a;
+    display: flex;
+}
+
+.item-flex {  
+    background: crimson;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+/* Exemple #1 */
+
+
+.a1, .a3 {
+    flex-grow: 0;
+}
+
+.a2 {
+    flex-grow: 1;
+}
+
+
+/* Exemple #2 */
+.containerB {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.b1, .b2 {
+    flex-basis: 48%;
+}
+
+.b3 {
+    flex-basis: 100%;
+}
+
+.b4, .b5 {
+    flex-basis: 48%;
+}
+
+
+/* Exemple #3 */
+
+.containerC {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerC .item-flex {
+    width: 50%;
+    height: 60px;
+}
+
+
+
+
+/* Exemple #4 */
+.containerD {
+    height: 750px;
+    /* width: 1400px; */
+    width: 1000px;
+}
+.containerD .item-flex {
+    width: 250px;
+    height: 250px;
+}
+/* .d3 {
+    margin-left: auto;
+} */
+
+.d2 {
+    margin: auto;
+}
+
+.d3 {
+    align-self: flex-end;
+} 
