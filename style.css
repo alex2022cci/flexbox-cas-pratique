@@ -159,9 +159,9 @@ body {
 }
 .txt-btn {
     height: 100%;
-    display: inline-flex;
+    display: inline-flex;   /*pour centrer le texte sur y*/
     align-items: center;
-    min-width: 150px;
+    min-width: 150px;       /*au cas où le texte change*/
     padding: 12px;
     font-size: 22px;
 }
@@ -187,11 +187,11 @@ body {
 
 
 .a1, .a3 {
-    flex-grow: 0;
+    flex-grow: 0;  /*poids faible == prends moins de place*/
 }
 
 .a2 {
-    flex-grow: 1;
+    flex-grow: 1;   /*poids plus fort == prends plus de place*/
 }
 
 
@@ -204,7 +204,7 @@ body {
 }
 
 .b1, .b2 {
-    flex-basis: 48%;
+    flex-basis: 48%;    
 }
 
 .b3 {
@@ -219,8 +219,8 @@ body {
 /* Exemple #3 */
 
 .containerC {
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column;   /*par défaut c'est row*/
+    justify-content: center;   
     align-items: center;
 }
 
@@ -251,5 +251,5 @@ body {
 }
 
 .d3 {
-    align-self: flex-end;
+    align-self: flex-end;   /*aligne vers la fin (à droite)*/
 } 
